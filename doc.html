@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hoepium | Premium Social Media Services</title>
+    <meta name="description" content="High-quality Instagram accounts, crypto subscriptions, and SMM services via Telegram">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1DB954',
+                        secondary: '#0A0A0A',
+                        accent: '#FFFFFF',
+                        dark: '#121212',
+                        darker: '#080808'
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' }},
+                        slideUp: { 
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        section { scroll-margin-top: 80px; }
+        .service-card {
+            transition: all 0.3s ease;
+            background: linear-gradient(145deg, #121212 0%, #0a0a0a 100%);
+            border: 1px solid rgba(29, 185, 84, 0.1);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(29, 185, 84, 0.15);
+            border-color: rgba(29, 185, 84, 0.3);
+        }
+        .price-chip {
+            background: rgba(29, 185, 84, 0.1);
+            border: 1px solid rgba(29, 185, 84, 0.2);
+        }
+        .transaction-badge {
+            background: rgba(29, 185, 84, 0.1);
+            border-left: 3px solid #1DB954;
+        }
+    </style>
+</head>
+<body class="bg-darker text-accent font-sans">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-dark shadow-lg">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-primary flex items-center">
+                    <i class="fab fa-telegram mr-2"></i>
+                    hoepium
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-primary transition">Home</a>
+                    <a href="#services" class="hover:text-primary transition">Services</a>
+                    <a href="#telegram" class="hover:text-primary transition">Contact</a>
+                </div>
+                <a href="https://t.me/hoepium" target="_blank" class="hidden md:block bg-primary hover:bg-opacity-90 text-white px-6 py-2 rounded-full transition">
+                    <i class="fab fa-telegram mr-2"></i> Message Now
+                </a>
+                <button id="mobile-menu-button" class="md:hidden text-accent focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="hover:text-primary transition">Home</a>
+                    <a href="#services" class="hover:text-primary transition">Services</a>
+                    <a href="#telegram" class="hover:text-primary transition">Contact</a>
+                    <a href="https://t.me/hoepium" target="_blank" class="bg-primary hover:bg-opacity-90 text-white px-6 py-2 rounded-full transition text-center">
+                        <i class="fab fa-telegram mr-2"></i> Message Now
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-b from-darker to-dark">
+        <div class="container mx-auto px-6">
+            <div class="max-w-2xl">
+                <h1 class="text-4xl md:text-5xl font-bold text-primary mb-6 animate-slide-up">
+                    Premium Social Media Services
+                </h1>
+                <p class="text-lg text-gray-300 mb-8 animate-slide-up animate-delay-100">
+                    Trusted provider of high-quality Instagram accounts, Telegram premium, and SMM growth services - delivered securely via Telegram.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-slide-up animate-delay-200">
+                    <a href="#services" class="bg-primary hover:bg-opacity-90 text-white px-6 py-3 rounded-full text-center transition">
+                        <i class="fas fa-store mr-2"></i> View Services
+                    </a>
+                    <a href="https://t.me/hoepium" target="_blank" class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-full text-center transition">
+                        <i class="fab fa-telegram mr-2"></i> Contact Now
+                    </a>
+                </div>
+                <div class="mt-8 flex flex-wrap gap-4 animate-slide-up animate-delay-300">
+                    <div class="flex items-center">
+                        <div class="flex -space-x-3">
+                            <div class="w-10 h-10 rounded-full bg-primary border-2 border-dark flex items-center justify-center">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-blue-500 border-2 border-dark flex items-center justify-center">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-purple-500 border-2 border-dark flex items-center justify-center">
+                                <i class="fas fa-check"></i>
+                            </div>
+                        </div>
+                        <span class="ml-4 text-sm text-gray-400">Trusted by <span class="font-bold text-white">500+</span> clients</span>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="p-2 bg-green-900 bg-opacity-30 rounded-full">
+                            <i class="fas fa-shield-alt text-green-500"></i>
+                        </div>
+                        <span class="ml-2 text-sm text-gray-400">Secure Transactions</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-dark">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4 animate-slide-up">Our Services</h2>
+                <div class="w-20 h-1 bg-primary mx-auto mb-6 animate-slide-up animate-delay-100"></div>
+                <p class="text-lg text-gray-300 max-w-2xl mx-auto animate-slide-up animate-delay-200">
+                    Premium services with guaranteed quality
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Instagram Accounts -->
+                <div class="service-card p-6 rounded-xl animate-slide-up">
+                    <div class="flex items-center mb-5">
+                        <div class="p-3 bg-gray-800 rounded-lg mr-4 text-primary">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">Instagram Accounts</h3>
+                            <p class="text-sm text-gray-400">Premium accounts for all needs</p>
+                        </div>
+                    </div>
+                   <div class="space-y-4">
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">@uwv1</span>
+            <span class="text-xs price-chip px-2 py-1 rounded-full">2k12</span>
+        </div>
+        <p class="text-sm text-gray-400 mt-1">Resembles uwu, fresh account</p>
+    </div>
+
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">@nd74</span>
+            <div class="flex items-center">
+                <span class="text-xs price-chip px-2 py-1 rounded-full mr-2">2k12</span>
+                <span class="text-xs price-chip px-2 py-1 rounded-full">2.5k</span>
+            </div>
+        </div>
+        <p class="text-sm text-gray-400 mt-1">With existing followers</p>
+    </div>
+
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">@kgts</span>
+            <span class="text-xs price-chip px-2 py-1 rounded-full">2k12</span>
+        </div>
+        <p class="text-sm text-gray-400 mt-1">Comes with fresh 2k12, clean 4L</p>
+    </div>
+</div>
+
+                    <a href="https://t.me/hoepium" target="_blank" class="mt-6 inline-flex items-center text-primary text-sm font-medium hover:underline">
+                        <i class="fab fa-telegram mr-2"></i> Order via Telegram
+                    </a>
+                </div>
+                
+                <!-- Aged Accounts -->
+                <div class="service-card p-6 rounded-xl animate-slide-up animate-delay-100">
+                    <div class="flex items-center mb-5">
+                        <div class="p-3 bg-gray-800 rounded-lg mr-4 text-primary">
+                            <i class="fas fa-clock text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">Aged Accounts</h3>
+                            <p class="text-sm text-gray-400">Vintage accounts with history</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">2013 Account</span>
+            <div class="flex space-x-2">
+                <span class="text-xs price-chip px-2 py-1 rounded-full">No posts: $2</span>
+                <span class="text-xs price-chip px-2 py-1 rounded-full">With posts: $4</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">2012 Account</span>
+            <div class="flex space-x-2">
+                <span class="text-xs price-chip px-2 py-1 rounded-full">No posts: $4</span>
+                <span class="text-xs price-chip px-2 py-1 rounded-full">With posts: $8</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- New 2011 Account Entry -->
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">2011 Account</span>
+            <div class="flex space-x-2">
+                <span class="text-xs price-chip px-2 py-1 rounded-full">No posts: $30</span>
+                <span class="text-xs price-chip px-2 py-1 rounded-full">With posts: $40</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <a href="https://t.me/hoepium" target="_blank" class="mt-6 inline-flex items-center text-primary text-sm font-medium hover:underline">
+                        <i class="fab fa-telegram mr-2"></i> Order via Telegram
+                    </a>
+                </div>
+<!-- Growth Services -->
+                <div class="service-card p-6 rounded-xl animate-slide-up animate-delay-200">
+                    <div class="flex items-center mb-5">
+                        <div class="p-3 bg-gray-800 rounded-lg mr-4 text-primary">
+                            <i class="fas fa-chart-line text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-primary">Growth Services</h3>
+                            <p class="text-sm text-gray-400">Boost your social presence</p>
+                        </div>
+                    </div>
+                   <div class="space-y-4">
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">Instagram Followers</span>
+            <span class="text-sm font-bold text-primary">$5 per 1k</span>
+        </div>
+        <p class="text-sm text-gray-400 mt-1">Real-looking, non-drop</p>
+    </div>
+
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">Telegram Members</span>
+            <span class="text-sm font-bold text-primary">$6 per 1k</span>
+        </div>
+        <p class="text-sm text-gray-400 mt-1">High retention</p>
+    </div>
+
+    <!-- New Entries START -->
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">Telegram Views</span>
+            <span class="text-sm font-bold text-primary">$3 per 1k</span>
+        </div>
+        <p class="text-sm text-gray-400 mt-1">Increase post visibility</p>
+    </div>
+
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">Telegram Reactions</span>
+            <span class="text-sm font-bold text-primary">$4 per 1k</span>
+        </div>
+        <p class="text-sm text-gray-400 mt-1">Boost post engagement</p>
+    </div>
+
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">Instagram Views</span>
+            <span class="text-sm font-bold text-primary">$2 per 1k</span>
+        </div>
+        <p class="text-sm text-gray-400 mt-1">Affordable video views</p>
+    </div>
+
+    <div class="transaction-badge p-4 rounded-lg">
+        <div class="flex justify-between items-center">
+            <span class="font-medium">Instagram Likes</span>
+            <span class="text-sm font-bold text-primary">$3 per 1k</span>
+        </div>
+        <p class="text-sm text-gray-400 mt-1">Genuine post likes</p>
+    </div>
+    <!-- New Entries END -->
+</div>
+
+                    <a href="https://t.me/hoepium" target="_blank" class="mt-6 inline-flex items-center text-primary text-sm font-medium hover:underline">
+                        <i class="fab fa-telegram mr-2"></i> Order via Telegram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Telegram Contact Section -->
+    <section id="telegram" class="py-20 bg-gradient-to-b from-dark to-darker">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-2xl mx-auto">
+                <div class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fab fa-telegram text-3xl text-primary"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-primary mb-6 animate-slide-up">Contact Us on Telegram</h2>
+                <p class="text-lg text-gray-300 mb-8 animate-slide-up animate-delay-100">
+                    For all inquiries and orders, message us directly on Telegram for the fastest response.
+                </p>
+                <div class="animate-slide-up animate-delay-200">
+                    <a href="https://t.me/hoepium" target="_blank" class="inline-block bg-primary hover:bg-opacity-90 text-white px-8 py-4 rounded-full text-lg font-medium transition">
+                        <i class="fab fa-telegram mr-2"></i> @hoepium
+                    </a>
+                    <p class="text-sm text-gray-500 mt-4">Average response time: Under 15 minutes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-darker border-t border-gray-800 text-center">
+        <div class="container mx-auto px-6">
+            <p class="text-gray-400 text-sm">
+                © 2023 hoepium. All services provided through Telegram platform.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(item => {
+            item.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
